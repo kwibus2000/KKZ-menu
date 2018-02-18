@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+/* responsive --- mobile first !!! */
+
 .main-navigation {
   background-color: #eee;
   color: #111;
@@ -27,8 +29,9 @@ ul {
   display: flex;
   text-align: center;
   text-decoration: none;
-  color: #eee;
-  padding: 1rem;
+  color: #a21a21;
+  padding: .25rem;
+  font-weight: bold;
 }
 
 .menu li a:hover {
@@ -36,11 +39,11 @@ ul {
   color: #fff;
 }
 
-
+/*  normaal / groot scherm */
 @media (min-width: 800px) {
   .menu {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
   }
 }
 
@@ -64,7 +67,7 @@ nav ul ul {
 nav ul li:hover > ul {
   display: block;
   color: #fff;
-  padding-left: 2rem;
+  padding-left: .5rem;
 }
 
 @media (min-width: 800px) {
@@ -96,6 +99,8 @@ nav ul li:hover > ul {
   /* background: url("P1220784--grijs-1920.jpg") 0 0 / contain no-repeat; */
 }
 
+/* Dit is dus voor grote schermen > 800px wijd */
+
 @media ( min-width: 800px) {
   .hero {
     width: 100%;
@@ -107,6 +112,10 @@ nav ul li:hover > ul {
 
   .main-navigation {
     background-color: #a21a21;
+    color: #eee;
+  }
+
+  .menu li a {
     color: #eee;
   }
 }
